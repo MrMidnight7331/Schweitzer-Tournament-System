@@ -10,7 +10,7 @@ PS. Ignore all the bugs. First rule of programming: It works so we shall not tou
 
 `cd Schweitzer-Tournament-System`
 
-`pip3 -m requirements.txt`
+`pip3 -r requirements.txt`
 
 `python3 main.py`
 
