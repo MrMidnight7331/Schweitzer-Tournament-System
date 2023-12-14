@@ -1,6 +1,6 @@
 # Schweitzer-Tournament-System
 
-Schweitzer Tournament System becuase Ann-Sophie wanted it. I got a cup of Coffee in return so nice work!
+Schweitzer Tournament System becuase Ann-Sophie wanted it. I got a cup of Coffee in return so nice work! PS. Ignore all the bugs. First rule of programming: It works so we shall not touch it :)
 
 # Installation
 
