@@ -22,8 +22,12 @@ if a odd number of player is detected, a random one will be selected and put in 
 
 # Known Issues
 
-I tried to fix it but it didn't work still:
+Issue1. I tried to fix it but it didn't work still:
 When entering a false integer 0,1,2 or just a wrong input in general, it will just skip the matchups to the next one. Tried to fix it, it did stayed at the same matchup players but it just skipped the entire round. Send a pull request if you have a fix!
+
+# Fixed Issue
+
+Fix1. The Issue was fixed by LazyTitan. Allthough not compleatly fixed but well enough! If one mistake has been made, it will skip to the next one first, but then return to the loop. However, the issue will still occur under circumstances. Further fixes and testing required!
 
 
 # Socials
