@@ -1,5 +1,10 @@
-import random
+"""
+@Project: Schweitzer-System
+@Author: Tieno
+@Version: 6.9
+"""
 
+import random
 
 def initialize_tournament(players):
     tournament = {player: 0 for player in players}
