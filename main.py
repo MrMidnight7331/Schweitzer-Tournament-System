@@ -77,6 +77,8 @@ def generate_next_round_matchups(tournament, previous_watching_players):
     return next_round_matchups, watching_player
 
 def main():
+    print(" _____                                                           _   \n(_   _)                                                         ( )_ \n  | |   _    _   _  _ __   ___     _ _   ___ ___     __    ___  | ,_)\n  | | /'_`\ ( ) ( )( '__)/' _ `\ /'_` )/' _ ` _ `\ /'__`\/' _ `\| |  \n  | |( (_) )| (_) || |   | ( ) |( (_| || ( ) ( ) |(  ___/| ( ) || |_ \n  (_)`\___/'`\___/'(_)   (_) (_)`\__,_)(_) (_) (_)`\____)(_) (_)`\__)")
+    print("By: Tieno / Version: 6.9\n")
     player_names = input("Enter player names separated by commas: ").split(',')
     tournament = initialize_tournament(player_names)
 
@@ -97,4 +99,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
