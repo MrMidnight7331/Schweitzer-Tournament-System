@@ -36,15 +36,19 @@ def conduct_round(round_num, tournament, matchups, watching_player):
     print_round_info(round_num, tournament, watching_player)
     print_matchups(matchups)
 
-    while True:
+    input_valid = False
+
+    while not input_valid:
         results = {}
         for match in matchups:
-            winner = input(
-                f"Enter the winner of {match[0]} vs {match[1]} (0 for {match[0]}, 1 for {match[1]}, 2 for draw): ").strip()
+            winner = input(f"Enter the winner of {match[0]} vs {match[1]} (0 for {match[0]}, 1 for {match[1]}, 2 for draw): ").strip()
             if winner not in ['0', '1', '2']:
                 print("Invalid input. Try again.")
-                continue
-            results[match] = match[int(winner)] if winner != '2' else 'draw'
+                input_valid = False
+            else:
+                input_valid = True
+                results[match] = match[int(winner)] if winner != '2' else 'draw'
+                break
 
         # Update tournament based on results
         for match, winner in results.items():
@@ -53,8 +57,6 @@ def conduct_round(round_num, tournament, matchups, watching_player):
                     tournament[player] += 1
             else:
                 tournament[winner] += 1
-
-        break
 
     return tournament
 
